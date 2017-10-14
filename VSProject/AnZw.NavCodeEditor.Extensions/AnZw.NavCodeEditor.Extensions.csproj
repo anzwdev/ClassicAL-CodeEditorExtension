@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9515F9B1-2BBA-4EC3-9D1A-443F07EB4851}</ProjectGuid>
+    <OutputType>library</OutputType>
+    <RootNamespace>AnZw.NavCodeEditor.Extensions</RootNamespace>
+    <AssemblyName>AnZw.NavCodeEditor.Extensions</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.CoreUtility, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Public Projects\NavEditorExtensions\Nav Code Editor Libraries\CodeViewer\CommonComponents\Microsoft.VisualStudio.CoreUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.ExtensibilityHosting, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Public Projects\NavEditorExtensions\Nav Code Editor Libraries\CodeViewer\CommonComponents\Microsoft.VisualStudio.ExtensibilityHosting.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Language.Intellisense, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Public Projects\NavEditorExtensions\Nav Code Editor Libraries\CodeViewer\CommonComponents\Microsoft.VisualStudio.Language.Intellisense.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Language.StandardClassification, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Public Projects\NavEditorExtensions\Nav Code Editor Libraries\CodeViewer\CommonComponents\Microsoft.VisualStudio.Language.StandardClassification.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Platform.VSEditor, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Public Projects\NavEditorExtensions\Nav Code Editor Libraries\CodeViewer\CommonComponents\Microsoft.VisualStudio.Platform.VSEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Platform.VSEditor.Interop">
+      <HintPath>..\..\..\..\Public Projects\NavEditorExtensions\Nav Code Editor Libraries\CodeViewer\CommonComponents\Microsoft.VisualStudio.Platform.VSEditor.Interop.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Text.Data, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Public Projects\NavEditorExtensions\Nav Code Editor Libraries\CodeViewer\CommonComponents\Microsoft.VisualStudio.Text.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Text.Internal, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Public Projects\NavEditorExtensions\Nav Code Editor Libraries\CodeViewer\CommonComponents\Microsoft.VisualStudio.Text.Internal.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Text.Logic, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Public Projects\NavEditorExtensions\Nav Code Editor Libraries\CodeViewer\CommonComponents\Microsoft.VisualStudio.Text.Logic.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Text.UI, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Public Projects\NavEditorExtensions\Nav Code Editor Libraries\CodeViewer\CommonComponents\Microsoft.VisualStudio.Text.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Text.UI.Wpf, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Public Projects\NavEditorExtensions\Nav Code Editor Libraries\CodeViewer\CommonComponents\Microsoft.VisualStudio.Text.UI.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.UI.Text.Wpf.KeyProcessor.Implementation">
+      <HintPath>..\..\..\..\Public Projects\NavEditorExtensions\Nav Code Editor Libraries\CodeViewer\CommonComponents\Microsoft.VisualStudio.UI.Text.Wpf.KeyProcessor.Implementation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.UI.Undo.Implementation">
+      <HintPath>..\..\..\..\Public Projects\NavEditorExtensions\Nav Code Editor Libraries\CodeViewer\CommonComponents\Microsoft.VisualStudio.UI.Undo.Implementation.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Themes\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\About.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\CodeGenerators\RecordAssignmentCodeGeneratorWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\CodeGenerators\RecordFieldListCodeGeneratorWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\ExtensionSettings.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\SnippetDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\SnippetSelection.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\VariableSelection.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CALCompletionHandlerProvider.cs" />
+    <Compile Include="CALCompletionSource.cs" />
+    <Compile Include="CALCompletionSourceProvider.cs" />
+    <Compile Include="CALKeyProcessor.cs" />
+    <Compile Include="CurrentLineInformation.cs" />
+    <Compile Include="DebugLog.cs" />
+    <Compile Include="DirectoryHelper.cs" />
+    <Compile Include="LanguageService\IMethodManager.cs" />
+    <Compile Include="InputProcessors\ClosingBracketInputProcessor.cs" />
+    <Compile Include="InputProcessors\InputProcessor.cs" />
+    <Compile Include="InputProcessors\SettingsInputProcessor.cs" />
+    <Compile Include="InputProcessors\SnippetsInputProcessor.cs" />
+    <Compile Include="InputProcessors\XmlDocInputProcessor.cs" />
+    <Compile Include="KeyEventArgsHelper.cs" />
+    <Compile Include="KeyStateInfo.cs" />
+    <Compile Include="LanguageService\Connector.cs" />
+    <Compile Include="LanguageService\Context.cs" />
+    <Compile Include="LanguageService\FieldInfo.cs" />
+    <Compile Include="LanguageService\IMethod.cs" />
+    <Compile Include="LanguageService\LanguageService.cs" />
+    <Compile Include="LanguageService\Method.cs" />
+    <Compile Include="LanguageService\MethodManager.cs" />
+    <Compile Include="LanguageService\ParameterInfo.cs" />
+    <Compile Include="LanguageService\TypeInfo.cs" />
+    <Compile Include="LanguageService\TypeInfoCache.cs" />
+    <Compile Include="Reflection\ReflectionTypeProxy.cs" />
+    <Compile Include="Reflection\ReflectionTypeProxyCache.cs" />
+    <Compile Include="Reflection\ReflectionWrapper.cs" />
+    <Compile Include="LanguageService\SignatureInfo.cs" />
+    <Compile Include="LanguageService\TypeInfoManager.cs" />
+    <Compile Include="ObservableObject.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Session.cs" />
+    <Compile Include="SessionSettings.cs" />
+    <Compile Include="Snippets\CodeGeneratorSnippet.cs" />
+    <Compile Include="Snippets\CodeGenerators\RecordAssignmentCodeGenerator.cs" />
+    <Compile Include="Snippets\CodeGenerators\RecordFieldListCodeGenerator.cs" />
+    <Compile Include="Snippets\Snippet.cs" />
+    <Compile Include="Snippets\SnippetCompletion.cs" />
+    <Compile Include="Snippets\SnippetDateTimeFunction.cs" />
+    <Compile Include="Snippets\SnippetManager.cs" />
+    <Compile Include="Snippets\SnippetFunction.cs" />
+    <Compile Include="Snippets\SnippetVariable.cs" />
+    <Compile Include="UI\About.xaml.cs">
+      <DependentUpon>About.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CodeGenerators\RecordAssignmentCodeGeneratorWindow.xaml.cs">
+      <DependentUpon>RecordAssignmentCodeGeneratorWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CodeGenerators\RecordAssignmentCodeGeneratorVM.cs" />
+    <Compile Include="UI\CodeGenerators\RecordFieldListCodeGeneratorVM.cs" />
+    <Compile Include="UI\CodeGenerators\RecordFieldListCodeGeneratorWindow.xaml.cs">
+      <DependentUpon>RecordFieldListCodeGeneratorWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ExtensionSettings.xaml.cs">
+      <DependentUpon>ExtensionSettings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SnippetDetails.xaml.cs">
+      <DependentUpon>SnippetDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SnippetSelection.xaml.cs">
+      <DependentUpon>SnippetSelection.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SnippetSelectionVM.cs" />
+    <Compile Include="UI\VariableSelection.xaml.cs">
+      <DependentUpon>VariableSelection.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VariableSelectionVM.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Key.snk" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="UI\Images\AddClass_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="UI\Images\DeleteClass_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="UI\Images\Edit_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="UI\Images\Import_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="UI\Images\Export_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="UI\Images\HelpApplication_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="UI\Images\ClearCollection_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="UI\Images\Editor_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="UI\Images\InsertParameter_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="UI\Images\NewParameter_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="UI\Images\DeleteParameter_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="UI\Images\Test_16x.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

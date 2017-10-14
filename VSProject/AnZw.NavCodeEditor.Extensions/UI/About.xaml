@@ -1,0 +1,26 @@
+﻿<Window x:Class="AnZw.NavCodeEditor.Extensions.UI.About"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AnZw.NavCodeEditor.Extensions.UI"
+        mc:Ignorable="d"
+        Title="About" Height="236.741" Width="360.383" WindowStartupLocation="CenterOwner" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Margin="5">
+            <TextBlock FontSize="20">Dynamics Nav Code Editor Extension</TextBlock>
+            <TextBlock>(C) 2017 Andrzej Zwierzchowski</TextBlock>
+            
+        </StackPanel>
+
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Width="80" IsDefault="True" IsCancel="True" Margin="5">Close</Button>
+        </StackPanel>
+    </Grid>
+</Window>
