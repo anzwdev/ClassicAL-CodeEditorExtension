@@ -18,7 +18,7 @@ Extension adds available snippets to the second tab on intellisense drop down, b
 
 If you want to build extension from source code, remember to remove all references to Microsoft.VisualStudio.*.dll libraries from AnZw.NavCodeEditor.Extensions project and add them again using files from C:\Program Files (x86)\Microsoft Dynamics NAV\110\RoleTailored Client\Add-ins\CodeViewer\CommonComponents. If you don't do it, Visual Studio will use libraries that are installed by Visual Studio, but because Dynamics Nav references older version, compiled extension will crash Nav and it won't be possible to open code editor at all.
 
-Source code contains 2 project:
+Source code contains 2 projects:
 - AnZw.NavCodeEditor.Extensions - code editor extension
 - AnZw.NavCodeEditor.Setup - small executable that references AnZw.NavCodeEditor.Extensions library and opens extension settings window. It is here just in case of some problems, because the only way to open extension settings in Nav is to go to code editor and press Ctrl+Shift+E, so if that shortcut does not work anymore because of broken settings, you can always use that executable to reset them.
 
